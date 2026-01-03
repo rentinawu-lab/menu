@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BOS Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -12,7 +15,6 @@
             font-family: "Poppins", Arial, sans-serif;
         }
 
-        /* Top small bar */
         .top-bar {
             background-color: #f4e5e8;
             color: #8b4a55;
@@ -20,9 +22,11 @@
             text-align: center;
             font-size: 14px;
             font-weight: 600;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
 
-        /* Main menu section */
+        
         .menu-bar {
             background-color: white;
             padding: 15px 40px;
@@ -32,14 +36,20 @@
             border-bottom: 1px solid #eee;
         }
 
-        /* Logo */
         .logo {
             display: flex;
             align-items: center;
-            font-size: 26px;
-            font-weight: bold;
-            color: #d76c82;
-            letter-spacing: 1px;
+            font-size: 32px;
+            font-weight: 700;
+            font-family: "Playfair Display", serif;
+            background: linear-gradient(135deg, #d76c82 0%, #c95670 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 2px;
+            text-shadow: 0 4px 8px rgba(215, 108, 130, 0.1);
+            transform: scaleX(1.05);
+            font-style: italic;
         }
 
         /* Center menu */
@@ -53,14 +63,26 @@
 
         .menu-center div {
             cursor: pointer;
-            transition: 0.2s;
+            transition: all 0.3s ease;
+            position: relative;
+            padding-bottom: 5px;
+        }
+
+        .menu-center div::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(90deg, #d76c82, #c95670);
+            transition: width 0.3s ease;
         }
 
         .menu-center div:hover {
             color: #d76c82;
         }
 
-        /* Right side icons */
         .menu-right {
             display: flex;
             align-items: center;
@@ -73,35 +95,33 @@
         .menu-right i {
             font-size: 20px;
             cursor: pointer;
-            transition: 0.2s;
+            transition: all 0.3s ease;
+            color: #555;
         }
 
         .menu-right i:hover {
             color: #d76c82;
+            transform: scale(1.2) rotate(10deg);
+            text-shadow: 0 4px 12px rgba(215, 108, 130, 0.3);
         }
     </style>
 
-    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
 
-    <!-- TOP PROMO BAR -->
     <div class="top-bar">
         ⭐ Free Shipping on Orders Over $30 | New Customers Get 10% Off!
     </div>
 
-    <!-- MAIN MENU BAR -->
     <div class="menu-bar">
 
-        <!-- LOGO -->
         <div class="logo">
             BOS Shop
         </div>
 
-        <!-- CENTER MENU OPTIONS -->
         <div class="menu-center">
             <div>Cleanser</div>
             <div>Moisturizer</div>
@@ -111,7 +131,6 @@
             <div>Sets & Kits</div>
         </div>
 
-        <!-- RIGHT SIDE ICONS -->
         <div class="menu-right">
             <i class="fas fa-search"></i>
             <i class="fas fa-user"></i>
