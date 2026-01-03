@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOS Shop</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", Arial, sans-serif;
+        }
+
+        /* Top small bar */
+        .top-bar {
+            background-color: #f4e5e8;
+            color: #8b4a55;
+            padding: 10px 40px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* Main menu section */
+        .menu-bar {
+            background-color: white;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Logo */
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 26px;
+            font-weight: bold;
+            color: #d76c82;
+            letter-spacing: 1px;
+        }
+
+        /* Center menu */
+        .menu-center {
+            display: flex;
+            gap: 30px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #555;
+        }
+
+        .menu-center div {
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .menu-center div:hover {
+            color: #d76c82;
+        }
+
+        /* Right side icons */
+        .menu-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 18px;
+            color: #555;
+            cursor: pointer;
+        }
+
+        .menu-right i {
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .menu-right i:hover {
+            color: #d76c82;
+        }
+    </style>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- TOP PROMO BAR -->
+    <div class="top-bar">
+        ⭐ Free Shipping on Orders Over $30 | New Customers Get 10% Off!
+    </div>
+
+    <!-- MAIN MENU BAR -->
+    <div class="menu-bar">
+
+        <!-- LOGO -->
+        <div class="logo">
+            BOS Shop
+        </div>
+
+        <!-- CENTER MENU OPTIONS -->
+        <div class="menu-center">
+            <div>Cleanser</div>
+            <div>Moisturizer</div>
+            <div>Serum</div>
+            <div>Sunscreen</div>
+            <div>Face Mask</div>
+            <div>Sets & Kits</div>
+        </div>
+
+        <!-- RIGHT SIDE ICONS -->
+        <div class="menu-right">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-user"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
